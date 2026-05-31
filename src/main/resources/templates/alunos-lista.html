@@ -3,24 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Alunos Cadastrados</title>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-	<h1>Alunos Cadastrados</h1>
+	<main class="caixa">
+		<h1>Alunos Cadastrados</h1>
 
-	<table border="1">
-		<tr>
-			<th>Nome</th>
-			<th>Matricula</th>
-		</tr>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Matricula</th>
+			</tr>
 
-		<tr th:each="aluno : ${alunos}">
-			<td th:text="${aluno.nome}"></td>
-			<td th:text="${aluno.matricula}"></td>
-		</tr>
-	</table>
+			<tr th:each="aluno : ${alunos}">
+				<td th:text="${aluno.nome}"></td>
+				<td th:text="${aluno.matricula}"></td>
+			</tr>
+		</table>
 
-	<br>
-
-	<a th:href="@{/alunos}">Cadastrar outro aluno</a>
+		<a th:href="@{/alunos}">Cadastrar outro aluno</a>
+	</main>
 </body>
 </html>

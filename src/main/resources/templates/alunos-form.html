@@ -3,22 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cadastro de Alunos</title>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-	<h1>Cadastro de Alunos</h1>
+	<main class="caixa">
+		<h1>Cadastro de Alunos</h1>
 
-	<form th:action="@{/alunos}" method="post">
-		<label>Nome:</label>
-		<input type="text" name="nome">
+		<form th:action="@{/alunos}" method="post">
+			<label>Nome:</label>
+			<input type="text" name="nome">
 
-		<br><br>
+			<label>Matricula:</label>
+			<input type="text" name="matricula">
 
-		<label>Matricula:</label>
-		<input type="text" name="matricula">
-
-		<br><br>
-
-		<button type="submit">Cadastrar</button>
-	</form>
+			<button type="submit">Cadastrar</button>
+		</form>
+	</main>
 </body>
 </html>

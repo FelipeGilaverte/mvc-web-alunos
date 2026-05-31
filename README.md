@@ -30,6 +30,8 @@ mvc-web-alunos/
 |   |-- templates/
 |   |   |-- alunos-form.html
 |   |   `-- alunos-lista.html
+|   |-- static/css/
+|   |   `-- styles.css
 |   `-- application.properties
 |-- pom.xml
 |-- mvnw
@@ -68,6 +70,10 @@ Quando o usuario clica em `Cadastrar`, os dados sao enviados para o controller.
 ### `alunos-lista.html`
 
 Tambem fica na camada View. Essa tela mostra uma tabela com os alunos cadastrados.
+
+### `styles.css`
+
+Define apenas a aparencia das paginas, como cores, espacamento, formulario, botao e tabela. A logica da aplicacao continua no controller e no model.
 
 ## Como executar
 

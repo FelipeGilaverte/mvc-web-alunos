@@ -1,3 +1,7 @@
+# Membros:
+Felipe Caliope das Merces Nascimento Gilaverte
+Murilo Carvalho Giroto
+
 # MVC Web - Cadastro de Alunos
 
 Projeto simples de cadastro de alunos usando Java, Spring Boot, Maven e Thymeleaf.
